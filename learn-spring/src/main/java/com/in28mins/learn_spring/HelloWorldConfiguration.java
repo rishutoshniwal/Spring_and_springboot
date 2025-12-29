@@ -27,7 +27,7 @@ public class HelloWorldConfiguration {
 		
 	}
 	
-	@Bean
+	@Bean(name = "customizedBeanNameForAddress")
 	public Address address() {
 		return new Address("Nadrai Gate", "Kasganj");
 		
