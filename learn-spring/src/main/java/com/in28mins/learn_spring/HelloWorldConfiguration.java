@@ -34,8 +34,8 @@ public class HelloWorldConfiguration {
 	}
 	
 	@Bean
-	public Person person3Parameters(String name, int age, Address address2) {
-		return new Person(name, age, address2);
+	public Person person3Parameters(String name, int age, Address customNameForAddress2) {
+		return new Person(name, age, customNameForAddress2);
 		
 	}
 	
@@ -45,7 +45,7 @@ public class HelloWorldConfiguration {
 		
 	}
 	
-	@Bean(name = "address2")
+	@Bean(name = "customNameForAddress2")
 	public Address address2() {
 		return new Address("Sector 62", "Noida");
 		
