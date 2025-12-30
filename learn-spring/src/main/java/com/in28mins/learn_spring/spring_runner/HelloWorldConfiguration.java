@@ -1,4 +1,4 @@
-package com.in28mins.learn_spring;
+package com.in28mins.learn_spring.spring_runner;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;

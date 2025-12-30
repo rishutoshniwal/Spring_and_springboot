@@ -1,4 +1,7 @@
-package com.in28mins.learn_spring;
+package com.in28mins.learn_spring.basic_runner;
+
+import com.in28mins.learn_spring.game.GameRunner;
+import com.in28mins.learn_spring.game.Pacman;
 
 public class App01GameBasicJava {
 
