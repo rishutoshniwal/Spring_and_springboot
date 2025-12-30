@@ -41,7 +41,10 @@ public class App02HelloWorldSpring {
 		System.out.println("********************************************************************************");
 		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 		System.out.println("********************************************************************************");
-		
+
+		// List count of all beans and fetching specific bean
+		System.out.println(context.getBeanDefinitionCount());
+		System.out.println(context.getBeanDefinition("person2MethodCall"));
 		
 //		System.out.println(context.getBean(Address.class));
 	}
