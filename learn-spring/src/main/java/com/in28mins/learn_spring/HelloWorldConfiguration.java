@@ -24,7 +24,7 @@ public class HelloWorldConfiguration {
 	}
 	
 	@Bean
-//	@Qualifier
+	@Primary
 	public Person person() {
 		return new Person("Sonam", 28, new Address("Mira Road", "Mumbai"));
 		
