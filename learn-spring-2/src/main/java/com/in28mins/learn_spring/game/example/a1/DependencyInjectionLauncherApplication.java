@@ -9,15 +9,25 @@ import org.springframework.stereotype.Component;
 @Component
 class YourBusinessClass {
 	
-	@Autowired
 	Dependency1 dep1;
-	
-    @Autowired
 	Dependency2 dep2;
+	
+	@Autowired
+	public void setDep1(Dependency1 dep1) {
+		System.out.println("Setter Injection dep1");
+		this.dep1 = dep1;
+	}
+
+	@Autowired
+	public void setDep2(Dependency2 dep2) {
+		System.out.println("Setter Injection dep2");
+		this.dep2 = dep2;
+	}
 	
 	public String toString() {
 		return "Field Injection: Dependency1 --> " + dep1 +" \n Dependency2 --> " + dep2;
 	}
+
 	
 }
 
