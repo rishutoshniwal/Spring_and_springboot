@@ -1,10 +1,8 @@
-package com.in28mins.learn_spring.spring_game_runner;
+package com.in28mins.learn_spring.game;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-
-import com.in28mins.learn_spring.game.GameRunner;
 
 @Configuration
 @ComponentScan("com.in28mins.learn_spring.game")
