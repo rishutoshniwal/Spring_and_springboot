@@ -1,4 +1,4 @@
-package com.in28mins.learn_spring.game.example.a1;
+package com.in28mins.learn_spring.example.a1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

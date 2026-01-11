@@ -1,4 +1,4 @@
-package com.in28mins.learn_spring.game.example.b1;
+package com.in28mins.learn_spring.example.b1;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;

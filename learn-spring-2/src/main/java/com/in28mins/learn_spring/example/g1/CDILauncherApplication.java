@@ -1,4 +1,4 @@
-package com.in28mins.learn_spring.game.example.g1;
+package com.in28mins.learn_spring.example.g1;
 
 import java.util.Arrays;
 

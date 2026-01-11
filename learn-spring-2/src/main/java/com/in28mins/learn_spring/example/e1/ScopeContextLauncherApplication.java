@@ -1,4 +1,4 @@
-package com.in28mins.learn_spring.game.example.e1;
+package com.in28mins.learn_spring.example.e1;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
