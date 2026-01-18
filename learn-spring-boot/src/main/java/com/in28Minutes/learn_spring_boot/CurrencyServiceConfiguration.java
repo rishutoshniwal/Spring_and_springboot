@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class CurrencyServiceConfiguration {
 
-	private String url;
-	private String username;
+	public String url;
+	public String username;
 	private String password;
 	
 
