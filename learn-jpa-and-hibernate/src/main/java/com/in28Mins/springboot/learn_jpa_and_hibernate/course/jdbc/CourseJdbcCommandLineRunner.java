@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import com.in28Mins.springboot.learn_jpa_and_hibernate.course.Course;
+
 @Component
 public class CourseJdbcCommandLineRunner implements CommandLineRunner{
 	
@@ -12,10 +14,11 @@ public class CourseJdbcCommandLineRunner implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Yaha aaya flow");
-		courseJdbcRepository.insertCourses();
+		courseJdbcRepository.insertCourses(new Course(1, "Course 1", "Ranga"));
+		courseJdbcRepository.insertCourses(new Course(2, "Course 2", "Ranga"));
+		courseJdbcRepository.insertCourses(new Course(3, "Course 3", "Ranga"));
 	
-		
+		courseJdbcRepository.deleteCourse(1);
 	}
 
 }
