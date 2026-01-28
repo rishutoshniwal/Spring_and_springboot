@@ -16,7 +16,7 @@ public class CourseSpringDataJpaCommandLineRunner implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		courseSpringDataJpaRepository.save(new Course(7, "Course 7", "Ranga"));
 		courseSpringDataJpaRepository.save(new Course(8, "Course 8", "Ranga"));
-		courseSpringDataJpaRepository.save(new Course(9, "Course 9", "Ranga"));
+		courseSpringDataJpaRepository.save(new Course(9, "Course 9", "Ranga_other"));
 
 		courseSpringDataJpaRepository.deleteById(8l);
 		
@@ -24,6 +24,20 @@ public class CourseSpringDataJpaCommandLineRunner implements CommandLineRunner {
 
 		System.out.println(courseSpringDataJpaRepository.findById(7l));
 		System.out.println(courseSpringDataJpaRepository.findById(9l));
+		
+		System.out.println("**************************************************");
+		
+		System.out.println(courseSpringDataJpaRepository.findAll());
+		System.out.println(courseSpringDataJpaRepository.count());
+		
+		System.out.println(courseSpringDataJpaRepository.findByAuthor("Ranga_other"));
+		System.out.println(courseSpringDataJpaRepository.findByAuthor("wrong_name"));
+		System.out.println(courseSpringDataJpaRepository.findByAuthor("Ranga"));
+		
+		System.out.println(courseSpringDataJpaRepository.findByName("Course 7"));
+		
+		System.out.println("**************************************************");
+		
 	}
 
 }
