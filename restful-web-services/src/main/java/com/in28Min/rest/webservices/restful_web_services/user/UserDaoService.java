@@ -22,5 +22,14 @@ public class UserDaoService {
 		return users;
 	}
 	
+	public User findUser(Integer id){
+		for(User user: users) {
+			if(user.getId().equals(id))
+				return user;
+		}
+		
+		return null;
+	}
+	
 
 }
