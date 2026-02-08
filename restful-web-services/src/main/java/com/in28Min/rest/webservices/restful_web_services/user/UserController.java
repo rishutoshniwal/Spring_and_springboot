@@ -21,7 +21,7 @@ public class UserController {
 	}
 	
 	@GetMapping(path = "users/{id}")
-	public User getUserById(@PathVariable Integer id) {
+	public User getUserById(@PathVariable int id) {
 		return userDaoService.findUser(id);
 	}
 
