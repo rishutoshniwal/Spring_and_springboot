@@ -3,6 +3,7 @@ package com.in28Min.rest.webservices.restful_web_services.user;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Predicate;
 
 import org.springframework.stereotype.Component;
@@ -33,6 +34,15 @@ public class UserDaoService {
 		user.setId(++usersCount);
 		users.add(user);
 		return user;
+	}
+	
+	public User deleteUserById(int id) {
+		Predicate<? super User> predicate = user -> user.getId().equals(id); 
+		Optional<User> user = users.stream().filter(predicate).findFirst();
+	    
+		user.ifPresent(users::remove);
+	    
+	    return user.orElse(null);
 	}
 	
 
