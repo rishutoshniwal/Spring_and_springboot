@@ -18,5 +18,10 @@ public class CommonPointcutConfig {
 	public void dataPackageConfig() {
 		
 	}
+	
+	@Pointcut("bean(*Service*)")
+	public void beansWhichContainsServiceInNames() {
+		
+	}
 
 }

@@ -19,10 +19,10 @@ public class LoggingAspect {
 	private Logger logger = LoggerFactory.getLogger(getClass());
 
 	// Pointcut - when?
-	@Before("com.in28Min.learn_spring_aop.aopexample.aspect.CommonPointcutConfig.businessAndDataPackageConfig()")
+	@Before("com.in28Min.learn_spring_aop.aopexample.aspect.CommonPointcutConfig.beansWhichContainsServiceInNames()")
 	public void logMethodCallBefore(JoinPoint joinPoint) {
 		// Logic - what?
-		logger.info("Before Aspect :: Method is called - {}", joinPoint);
+		logger.info("Before Aspect is executed for beans which contains name Service :: Method is called - {}", joinPoint);
 
 	}
 
@@ -42,5 +42,6 @@ public class LoggingAspect {
 	public void logMethodCallAfterSuccessfulExecution(JoinPoint joinPoint, Object resultValue) {
 		logger.info("AfterReturning Aspect - {} has returned {}", joinPoint, resultValue);
 	}
+	
 
 }
