@@ -27,3 +27,9 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+task hello {
+	doLast {
+	   System.out.println("Hello, in28MIns");
+	}
+}
